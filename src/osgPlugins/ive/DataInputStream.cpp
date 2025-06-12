@@ -177,6 +177,7 @@ DataInputStream::DataInputStream(std::istream* istream, const osgDB::ReaderWrite
    }
 
     _version = readUInt();
+    _version = readUInt();
 
     // Are we trying to open a binary .ive file which version are newer than this library.
     if(_version>VERSION){

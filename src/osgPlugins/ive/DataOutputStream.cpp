@@ -234,6 +234,7 @@ DataOutputStream::DataOutputStream(std::ostream * ostream, const osgDB::ReaderWr
 
     writeUInt(ENDIAN_TYPE) ;
     writeUInt(getVersion());
+    writeUInt(getVersion());
 
     writeInt(_compressionLevel);
 
